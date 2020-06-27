@@ -152,6 +152,10 @@ font-family: 'Tajawal', sans-serif;
     .navbar-light .navbar-nav .nav-link{
         padding-left:20px;
     }
+	    .header .header-info{
+        text-align: left;
+        margin-left:-20px;
+    }
 }
 .header .header-info button{
     padding:5px 30px;
