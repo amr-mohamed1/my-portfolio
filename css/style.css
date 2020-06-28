@@ -111,7 +111,7 @@ font-family: 'Tajawal', sans-serif;
     
 }
 .header .overlay{
-    background-color:rgba(0,0,0,.85);
+    background-color:rgba(0,0,0,.9);
         height:100%;
     width: 100%;
     top:0;
@@ -199,7 +199,7 @@ font-family: 'Tajawal', sans-serif;
     transition:all .3s ease-in
 }
 .about img:hover{
-        box-shadow:-18px -18px rgba(196, 155, 102,.84);
+        box-shadow:-18px -18px rgba(196, 155, 102,.9);
 }
 .about h1 {
     padding-top:60px;
@@ -506,6 +506,49 @@ font-family: 'Tajawal', sans-serif;
 
 
 /*                                        end services                                                         */
+
+/*                                        start statistics                                                         */
+.statistics
+{
+    background-image: url(../img/background-balance-business-commerce-583846.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.statistics .overlay{
+        background-color:rgba(0,0,0,.9);
+        height:100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+.statistics svg{
+    margin-top: 70px;
+    font-size:40px;
+    color:#C49B66;
+    font-weight:normal
+}
+.statistics h3
+{
+    margin-top:40px;
+    color:#fff;
+    font-size:40px;
+    letter-spacing:2px;
+}
+.statistics p {
+    font-weight:normal;
+    color:#ccc;
+    padding-top:30px;
+    letter-spacing:2px;
+    padding-bottom:50px;
+}
+@media (max-width:991px){
+    .statistics p{
+    padding-bottom:10px;    }
+}
+/*                                        end statistics                                                         */
 
 
 /*loading*/
