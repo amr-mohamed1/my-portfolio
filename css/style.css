@@ -111,7 +111,7 @@ font-family: 'Tajawal', sans-serif;
     
 }
 .header .overlay{
-    background-color:rgba(0,0,0,.9);
+    background-color:rgba(0,0,0,.85);
         height:100%;
     width: 100%;
     top:0;
@@ -199,7 +199,7 @@ font-family: 'Tajawal', sans-serif;
     transition:all .3s ease-in
 }
 .about img:hover{
-        box-shadow:-18px -18px rgba(196, 155, 102,.9);
+        box-shadow:-18px -18px rgba(196, 155, 102,.84);
 }
 .about h1 {
     padding-top:60px;
