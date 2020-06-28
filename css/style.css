@@ -44,7 +44,7 @@ font-family: 'Tajawal', sans-serif;
 /*                                        frameworks                                                    */
 
 .main-color{
-    color:#e6aa5b
+    color:#C49B66
 }
 
 /*                                        Navbar                                                        */
@@ -104,10 +104,21 @@ font-family: 'Tajawal', sans-serif;
 
 .header{
     width:100%;
-    background-color:#101010;
+    background-image:url(../img/black-laptop-beside-black-computer-mouse-inside-room-669996.jpg);
+    background-size: cover;
     position: relative;
+    background-position: center
+    
 }
-
+.header .overlay{
+    background-color:rgba(0,0,0,.9);
+        height:100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
 .header .header-img img{
     padding-top:25%;
     padding-left:70px;
@@ -139,6 +150,7 @@ font-family: 'Tajawal', sans-serif;
 {
     .header .header-info{
         text-align: left;
+        margin-left:-40px;
     }
         .header .header-img{
        display: none
@@ -151,10 +163,6 @@ font-family: 'Tajawal', sans-serif;
     }
     .navbar-light .navbar-nav .nav-link{
         padding-left:20px;
-    }
-	    .header .header-info{
-        text-align: left;
-        margin-left:-40px;
     }
 }
 .header .header-info button{
@@ -278,22 +286,230 @@ font-family: 'Tajawal', sans-serif;
 }
 
 
+/*                                             information                              */
+
+.information
+{
+    width:100%;
+    background-image: url(../img/background-balance-business-commerce-583846.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.information .overlay{
+    background-color: rgba(0,0,0,0.9);
+    height:100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+.information .education {
+    margin-top:50px;
+        margin-left:10px;
+}
+.information .education h5{
+    color:#eee;
+    padding-left:20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.information .education h3{
+    padding-left:20px;
+    font-size:35px;
+    color:#fff;
+    font-weight:normal;
+    letter-spacing:2px;
+}
+.information .education .underline{
+    height:2px;
+    width:165px;
+    background-color: #C49B66;
+    margin-left:20px;
+    margin-top:5px;
+    margin-bottom:40px;
+}
+.information .education p {
+    margin-left:20px;
+    color:#bbb
+}
+.information .education .university{
+    margin-bottom:40px;
+}
+.information .skills{
+    margin-top:50px;
+    margin-left:10px;
+}
+.information .skills h3{
+    padding-left:20px;
+    font-size:35px;
+    color:#fff;
+    font-weight:normal;
+    letter-spacing:2px;
+}
+.information .skills .underline
+{
+        height:2px;
+    width:83px;
+    background-color: #C49B66;
+    margin-left:20px;
+    margin-top:5px;
+    margin-bottom:40px;
+}
+.information i{
+    font-size:30px;
+    color:#C49B66;
+    margin-left: 20px;
+    padding-bottom:20px;
+}
+.information .skills .html h6 , .information .skills .css h6 , .information .skills .bootstrap h6 , .information .skills .javascript h6 , .information .skills .jquery h6  {
+    color:#eee;
+    font-size:15px;
+    font-weight:normal;
+        padding:0;
+    margin: 0;
+}
+.information .skills .html h6 span , .information .skills .css h6 span , .information .skills .javascript h6 span , .information .skills .jquery h6 span , .information .skills .bootstrap h6 span{
+    float:right;
+    font-size:12px;
+    font-weight:normal
+}
+/*             html               */
+.information .skills .html .eq-html{
+    height:3px;
+    background-color:#443f3f;
+    width: 100%;
+    margin-bottom:20px;
+}
+.information .skills .html .eq-html .h{
+    height:100%;
+    width:93%;
+    background-color: #C49B66;
+}
+/*             css               */
+.information .skills .css .eq-css{
+    height:3px;
+    background-color:#443f3f;
+    width: 100%;
+    margin-bottom:20px;
+}
+.information .skills .css .eq-css .c{
+    height:100%;
+    width:95%;
+    background-color: #C49B66;
+}
+/*             bootstrap               */
+.information .skills .bootstrap .eq-bootstrap{
+    height:3px;
+    background-color:#443f3f;
+    width: 100%;
+    margin-bottom:20px;
+}
+.information .skills .bootstrap .eq-bootstrap .b{
+    height:100%;
+    width:90%;
+    background-color: #C49B66;
+}
+/*            javascript:     */
+.information .skills .javascript .eq-javascript{
+    height:3px;
+    background-color:#443f3f;
+    width: 100%;
+    margin-bottom:20px;
+}
+.information .skills .javascript .eq-javascript .ja{
+    height:100%;
+    width:80%;
+    background-color: #C49B66;
+}
+/*            jquery     */
+.information .skills .jquery .eq-jquery{
+    height:3px;
+    background-color:#443f3f;
+    width: 100%;
+    margin-bottom:20px;
+}
+.information .skills .jquery .eq-jquery .jq{
+    height:100%;
+    width:85%;
+    background-color: #C49B66;
+}
+.information .skills .pro
+{
+    margin-left:20px;
+    margin-bottom: 40px;
+}
+
+/*                                        services                                                         */
+
+.services{
+    background-color: #131414
+}
+.services h1{
+    text-align: center;
+    padding-top:50px;
+    color:#eee;
+    letter-spacing: 2px;
+    font-size:40px;
+    font-weight:400;
+}
+.services .bottom
+{
+    margin: auto;
+    height:3px;
+    background-color:#443f3f;
+    width:220px;
+    margin-top:20px;
+    margin-bottom:80px;
+}
+.services .bottom .dark{
+    margin: auto;
+    width:75px;
+    background-color: #C49B66;
+    height:100%;
+}
+.services i
+{
+    color:#C49B66;
+    font-size:45px;
+    padding-top:40px;
+}
+.services h3{
+    font-size:30px;
+    font-weight:normal;
+    margin-bottom:40px;
+    padding-top: 20px;
+    color:#eee
+}
+.services .web , .services .responsive
+{
+    border-right:1px solid #C49B66;
+}
+.services .web , .services .responsive , .services .shield{
+    margin-bottom:100px;
+    margin-top:50px;
+}
+
+@media (max-width:991px)
+{
+    .services .web , .services .responsive
+    {
+        border:none;
+    }
+    .services .web , .services .responsive , .services .shield{
+            margin-bottom:40px;
+    margin-top:10px;
+    }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*                                        end services                                                         */
 
 
 /*loading*/
+
 .loading{
     position: fixed;
     height: 100%;
