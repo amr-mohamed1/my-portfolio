@@ -5,7 +5,7 @@ $("document").ready(function () {
     
     
     var typed = new Typed('.writter', {
-  strings: [ "<p>Front End <span>Developer</span> </p>", "<p>UI/UX <span>designer</span> </p>"],
+        strings: [ "<p>Front End <span>Developer</span> </p>", "<p>UI/UX <span>designer</span> </p>"],
 		typeSpeed: 100,
 		backSpeed: 40,
 		backDelay: 1000,
@@ -61,6 +61,16 @@ $("document").ready(function () {
         }, 2000);
     });
     
+    // scroll to services
+            $(".navbar .nav-services").click(function () {
+        
+        $("html, body").animate({
+            
+            scrollTop: $(".services").offset().top -20
+            
+        }, 2000);
+    });
+    
     
     // navigation
     
@@ -69,17 +79,26 @@ $("document").ready(function () {
         $(this).addClass("active").siblings().removeClass("active");
     });
     
+    //  scroll to !!!!!!!!!!!
+    
        $(window).on("scroll",function () {
+           
+           // scroll to about
 
-        if($(window).scrollTop() >= 350 && $(window).scrollTop() <= 810){
+        if($(window).scrollTop() >= 350 && $(window).scrollTop() <= 1479){
 
                 $(".navbar .nav-about").addClass("active").siblings().removeClass("active");
 
         }
+           
+                      // scroll to home
+           
         if($(window).scrollTop() <= 349){
 
                 $(".navbar .nav-home").addClass("active").siblings().removeClass("active");
         }
+           
+                      // nav bar big
         if($(window).scrollTop() >= 100){
 
               $(".navbar").addClass("nav-scroll");
@@ -87,8 +106,15 @@ $("document").ready(function () {
         else{
              $(".navbar").removeClass("nav-scroll");
         }
+           
+                      // scroll to services
+           
+           if($(window).scrollTop() >= 1480 && $(window).scrollTop() <= 2040){
+
+               $(".navbar .nav-services").addClass("active").siblings().removeClass("active");
+        }
     });
-    
+
     
     /* loading */
     
