@@ -39,11 +39,19 @@ $("document").ready(function () {
     //scroll to about
 
 
-    $(".header .header-info button , .navbar .nav-about").click(function () {
+    $(".navbar .nav-about").click(function () {
 
         $("html, body").animate({
 
             scrollTop: $(".about").offset().top - 70
+
+        }, 2000);
+    });
+    $(".header button").click(function () {
+
+        $("html, body").animate({
+
+            scrollTop: $(".about").offset().top - 50
 
         }, 2000);
     });
@@ -52,7 +60,7 @@ $("document").ready(function () {
     //scroll to home
 
 
-    $(".header .header-info button , .navbar .nav-home").click(function () {
+    $(".navbar .nav-home").click(function () {
 
         $("html, body").animate({
 
@@ -71,13 +79,45 @@ $("document").ready(function () {
         }, 2000);
     });
 
+    // scroll to protofolio
+    $(".navbar .nav-portfolio").click(function () {
 
-    // navigation
+        $("html, body").animate({
 
+            scrollTop: $(".protofolio").offset().top - 20
 
-    $(".navbar li").click(function () {
-        $(this).addClass("active").siblings().removeClass("active");
+        }, 2000);
     });
+
+    // scroll to testimonail
+    $(".navbar .nav-testimonials").click(function () {
+
+        $("html, body").animate({
+
+            scrollTop: $(".testi").offset().top -150
+
+        }, 2000);
+    });
+
+    // scroll to contact
+    $(".navbar .nav-contact").click(function () {
+
+        $("html, body").animate({
+
+            scrollTop: $(".contact").offset().top + 15
+
+        }, 2000);
+    });
+
+    $(".about button").click(function () {
+
+        $("html, body").animate({
+
+            scrollTop: $(".contact").offset().top + 15
+
+        }, 2000);
+    });
+
 
     //  scroll to !!!!!!!!!!!
 
@@ -98,6 +138,25 @@ $("document").ready(function () {
             $(".navbar .nav-home").addClass("active").siblings().removeClass("active");
         }
 
+        // scroll to protofolio
+
+        if ($(window).scrollTop() >= 2240 && $(window).scrollTop() <=2918) {
+
+            $(".navbar .nav-portfolio").addClass("active").siblings().removeClass("active");
+        }
+
+        // scroll to contact
+
+        if ($(window).scrollTop() >= 3275) {
+
+            $(".navbar .nav-contact").addClass("active").siblings().removeClass("active");
+        }
+
+        // scroll to testimonial
+                if ($(window).scrollTop() >= 2917 && $(window).scrollTop() <= 3274) {
+
+            $(".navbar .nav-testimonials").addClass("active").siblings().removeClass("active");
+        }
         // nav bar big
         if ($(window).scrollTop() >= 100) {
 
@@ -118,6 +177,11 @@ $("document").ready(function () {
         }
     });
 
+    // protofolio
+
+    $(".protofolio .list li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
 
     /* loading */
 
@@ -125,7 +189,6 @@ $("document").ready(function () {
     $(".loading").ready(
         function () {
             setTimeout(function () {
-                "use strict";
                 $(".loading").fadeOut();
 
             }, 3000);
@@ -138,4 +201,18 @@ $("document").ready(function () {
         time: 2000
     });
 
+    // mix it up
+    var mixer = mixitup(".protofolio");
+
+
 });
+wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
