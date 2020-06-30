@@ -38,7 +38,6 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Tajawal', sans-serif;
   overflow-x: hidden !important;
-    height:9000px;
 }
 
 /*                                        frameworks                                                    */
@@ -550,6 +549,275 @@ font-family: 'Tajawal', sans-serif;
 }
 /*                                        end statistics                                                         */
 
+
+/*                                        start protofolio                                                         */
+.protofolio{
+    background-color: #131414;
+}
+.protofolio h1{
+    text-align: center;
+    padding-top:50px;
+    color:#eee;
+    letter-spacing: 2px;
+    font-size:40px;
+    font-weight:400;
+}
+.protofolio .bottom
+{
+    margin: auto;
+    height:3px;
+    background-color:#443f3f;
+    width:265px;
+    margin-top:20px;
+    margin-bottom:80px;
+}
+.protofolio .bottom .dark{
+    margin: auto;
+    width:80px;
+    background-color: #C49B66;
+    height:100%;
+}
+
+.protofolio .list{
+    margin:50px auto;
+}
+.protofolio .list ul{
+    list-style: none;
+    min-width:350px;
+}
+.protofolio .list li{
+    display: inline-block;
+    margin: 0 10px;
+    border:1px solid #C49B66;
+    transition:all .3s ease-in-out;
+    font-weight:500;
+    font-size:14px;
+    cursor: pointer;
+    color:#fff;
+    padding:5px 15px;
+    border-radius:3px
+}
+.protofolio .list li:hover{
+    color:#eee;
+    background-color:#C49B66;
+    border:1px solid #C49B66;
+}
+.protofolio .list .active{
+    color:#eee;
+    background-color:#C49B66;
+    border:1px solid #C49B66;
+}
+.protofolio img{
+    max-height:100%;
+    max-width:100%;
+    margin-bottom:30px;
+    cursor:pointer;
+}
+.protofolio .over {
+    position: absolute;
+    width: 100%;
+    height: 86%;
+    top: 0;
+    left: 0;
+    margin:0;
+    padding: 0;
+    background-color: rgba(197, 133, 49, 0.92);
+    color: #fff;
+    display:none;
+    transition: all .5s ease-in-out;
+}
+.protofolio .item:hover .over{
+    display:block;
+}
+.protofolio .item{
+    overflow: hidden;
+    position: relative
+}
+.protofolio .item .over button{
+    margin-left: 115.01px;
+    margin-top: 67.5px;
+    background-color: transparent;
+    border:1px solid #ccc;
+    color:#eee;
+    transition:all .5s ease-in-out;
+    padding: 5px 20px;
+    border-radius:5px;
+    cursor: pointer;
+    outline:none;
+}
+.protofolio .item .over button:hover{
+    background-color:#fff;
+        border:1px solid #ccc;
+    color:#C49B66
+}
+@media (max-width:991px){
+    .protofolio .item .over button{
+            margin-left: 135.01px;
+        margin-top: 92.5px;
+    }
+}
+
+.over i
+{
+    color:#fff;
+    position: absolute;
+    bottom: 12px;
+    right: 11px;
+    font-weight: normal;
+}
+
+/*                                        end protofolio                                                         */
+
+/*                                            start testimonial:                                                                     */
+.testi{
+    background-image: url(../img/a1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center top;
+}
+.testi svg{
+    text-align: center;
+    color:#eee;
+    margin-top:60px;
+    font-size:40px;
+}
+.testi .overlay{
+        background-color:rgba(0,0,0,.8);
+        height:100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+.testi h1{
+    text-align: center;
+    padding-top:30px;
+    color:#eee;
+    letter-spacing: 2px;
+    font-size:40px;
+    font-weight:400;
+}
+.testi .bottom
+{
+    margin: auto;
+    height:3px;
+    background-color:#443f3f;
+    width:265px;
+    margin-top:20px;
+    margin-bottom:80px;
+}
+.testi .bottom .dark{
+    margin: auto;
+    width:80px;
+    background-color: #C49B66;
+    height:100%;
+}
+.testi .carousel-indicators{
+    bottom: -100px;
+    margin-bottom:50px;
+}
+.testi p{
+    color:#eee;
+    font-size:25px;
+}
+.testi span{
+    color:#bbb
+}
+.testi .container{
+    padding-bottom:100px;
+}
+/*                                            end testimonial:                                                                     */
+
+/*                                            start contact:                                                                     */
+.contact{
+    background-image:url(../img/b5.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    color:#eee;padding:0;
+    background-attachment:fixed;
+    background-position:center right;
+}
+.contact .overlay{
+        background-color:rgba(0,0,0,.84);
+        height:100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+.contact h1{
+    text-align: center;
+    padding-top:80px;
+    color:#eee;
+    letter-spacing: 2px;
+    font-size:40px;
+    font-weight:400;
+}
+.contact .bottom
+{
+    margin: auto;
+    height:3px;
+    background-color:#443f3f;
+    width:265px;
+    margin-top:20px;
+    margin-bottom:80px;
+}
+.contact .bottom .dark{
+    margin: auto;
+    width:80px;
+    background-color: #C49B66;
+    height:100%;
+}
+.contact input[type='text'],
+.contact input[type='email'],
+.contact  textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  background: rgba(10, 10, 10, 0.4);
+  color: #fff;
+  margin-bottom: 15px;
+}
+.contact button{
+        padding:5px 30px;
+    border:1px solid #9e6c2c;
+    background-color: #9e6c2c;
+    color:#eee;
+    font-size:20px;
+    transition:all .5s ease-in-out;
+    margin-bottom:50px;
+}
+.contact svg{
+    float: left;
+    padding-top: 5px;
+    font-size: 30px;
+    color: #C49B66;
+}
+.contact .item .cont {
+    margin-left: 45px;
+    padding-left: 15px;
+    border-left: 1px solid rgba(200, 200, 200, 0.4);
+    margin-bottom:70px;
+}
+.contact p{
+    color: #bbb;
+}
+/*                                            end contact:                                                                     */
+
+/*                                            start footer:                                                                     */
+.footer{
+        background-color: #131414;
+}
+.footer p{
+    padding:40px 0;
+    color: #a3a3a3;
+    font-weight:normal;
+    font-size:15px;
+    margin: 0;
+}
+/*                                            end footer:                                                                     */
 
 /*loading*/
 
