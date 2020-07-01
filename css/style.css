@@ -46,6 +46,33 @@ font-family: 'Tajawal', sans-serif;
     color:#C49B66
 }
 
+/*                                        scroll to text-outline:                                        */
+.scroll {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    z-index:9999;
+}
+.scroll svg{
+    height:40px;
+    width:40px;
+    line-height:40px;
+    color:#fff;
+    border-radius:50%;
+    background-color: #C49B66;
+    font-size:20px;
+    padding:5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out
+}
+.scroll svg:hover{
+    background-color:transparent;
+    color: #C49B66;
+    border:2px solid #C49B66
+}
+
 /*                                        Navbar                                                        */
 .navbar{
     position: absolute;
@@ -634,8 +661,6 @@ font-family: 'Tajawal', sans-serif;
     position: relative
 }
 .protofolio .item .over button{
-    margin-left: 115.01px;
-    margin-top: 67.5px;
     background-color: transparent;
     border:1px solid #ccc;
     color:#eee;
@@ -644,19 +669,13 @@ font-family: 'Tajawal', sans-serif;
     border-radius:5px;
     cursor: pointer;
     outline:none;
+    margin-top: 68.5px;
 }
 .protofolio .item .over button:hover{
     background-color:#fff;
         border:1px solid #ccc;
     color:#C49B66
 }
-@media (max-width:991px){
-    .protofolio .item .over button{
-            margin-left: 135.01px;
-        margin-top: 92.5px;
-    }
-}
-
 .over i
 {
     color:#fff;
