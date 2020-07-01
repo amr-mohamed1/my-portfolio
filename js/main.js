@@ -23,6 +23,19 @@ $("document").ready(function () {
     });
 
 
+        // scroll to top
+    
+        $(".scroll").click(function() {
+  window.scrollTo({ top: 0, behavior: 'smooth'});
+});
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 600) {
+        $('.scroll').fadeIn(200);
+    } else {
+        $('.scroll').fadeOut(200);
+    }
+});
+    
     //header
 
 
